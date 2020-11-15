@@ -1,9 +1,8 @@
 # Arena
 
 [![CircleCI](https://circleci.com/gh/kubeflow/arena.svg?style=svg)](https://circleci.com/gh/kubeflow/arena)
-[![Build Status](https://travis-ci.org/kubeflow/arena.svg?branch=master)](https://travis-ci.org/kubeflow/arena) 
+[![Build Status](https://travis-ci.org/kubeflow/arena.svg?branch=master)](https://travis-ci.org/kubeflow/arena)
 [![Go Report Card](https://goreportcard.com/badge/github.com/kubeflow/arena)](https://goreportcard.com/report/github.com/kubeflow/arena)
-
 
 ## Overview
 
@@ -19,6 +18,8 @@ For the Chinese version, please refer to [中文文档](README_cn.md)
 
 You can follow up the [Installation guide](docs/installation/INSTALL_FROM_BINARY.md)
 
+## Quickstart
+
 ## User Guide
 
 Arena is a command-line interface to run and monitor the machine learning training jobs and check their results in an easy way. Currently it supports solo/distributed training.
@@ -31,7 +32,7 @@ Arena is a command-line interface to run and monitor the machine learning traini
 - [6. Run a distributed TensorFlow training job with gang scheduler](docs/userguide/6-tfjob-gangschd.md)
 - [7. Run TensorFlow Serving](docs/userguide/7-tf-serving.md)
 - [8. Run TensorFlow Estimator](docs/userguide/8-tfjob-estimator.md)
-- [9. Monitor GPUs of the training job ](docs/userguide/9-top-job-gpu-metric.md)
+- [9. Monitor GPUs of the training job](docs/userguide/9-top-job-gpu-metric.md)
 - [10. Run a distributed training job with RDMA](docs/userguide/10-rdma-integration.md)
 - [11. Run a distributed spark job](docs/userguide/11-sparkjob-distributed.md)
 - [12. Run a Volcano job](docs/userguide/12-volcanojob.md)
@@ -44,10 +45,10 @@ Arena is a command-line interface to run and monitor the machine learning traini
 - [19. Run a distributed Pytorch Job](docs/userguide/18-pytorchjob-distributed.md)
 - [20. Run a KFServing Job](docs/userguide/27-kfserving-custom.md)
 - [21. Run a Elastic Training Job](docs/userguide/28-elastictraining-tensorflow2-mnist.md)
+
 ## Demo
 
-[![](demo.jpg)](http://cloud.video.taobao.com/play/u/2987821887/p/1/e/6/t/1/50210690772.mp4)
-
+[![Demo](demo.jpg)](http://cloud.video.taobao.com/play/u/2987821887/p/1/e/6/t/1/50210690772.mp4)
 
 ## Developing
 
@@ -55,7 +56,7 @@ Prerequisites:
 
 - Go >= 1.8
 
-```
+```Shell
 mkdir -p $(go env GOPATH)/src/github.com/kubeflow
 cd $(go env GOPATH)/src/github.com/kubeflow
 git clone https://github.com/kubeflow/arena.git
@@ -69,7 +70,7 @@ Then you can follow [Installation guide for developer](docs/installation/INSTALL
 
 ## CPU Profiling
 
-```
+```Shell
 # set profile rate (HZ)
 export PROFILE_RATE=1000
 
@@ -79,8 +80,6 @@ INFO[0000] Dump cpu profile file into /tmp/cpu_profile
 ```
 
 Then you can analyze the profile by following [Go CPU profiling: pprof and speedscope](https://coder.today/go-profiling-pprof-and-speedscope-b05b812cc429)
-
-
 
 ## FAQ
 
